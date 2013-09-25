@@ -22,6 +22,10 @@
 
 
 d3.select("body").append("h1").text("my first chart");
+prices.forEach(function(d) {
+    // recasts d.2013 as a number, not a string
+    d.X2013 = +d.X2013;
+})
 
 var margin = {top: 20, right: 10, bottom: 20, left: 10};
 
